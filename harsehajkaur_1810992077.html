@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Table</title>
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+</head>
+<body id="main">
+<div id="heading"> <u>Details Form</u><div>
+<hr><center><table >
+<th>
+<tr>
+<th> Name:</th>
+<td><input type="text" name="fname" id="fname"></td>
+</tr>
+</th>
+<tbody>
+<tr>
+<th>Mobile Number:</th>
+<td><input type="text" name="number" id="number"></td>
+</tr>
+<tr>
+<th>Email:</th>
+<td><input type="text" name="email" id="email"></td>
+</tr><tr></tr><tr></tr><tr></tr> <tr></tr> <tr> </tr> <tr></tr> <tr>    </tr>
+<tr id="b1"><td></td><td><input type="button" class="button" id="b1" value="SUBMIT" onclick="AddRow()"></td>
+</tr></tbody></table>
+<hr><table  id="new"><thead>
+<tr>
+<th>Name.</th>
+<th>Mobile Number:</th>
+<th>Email Id:</th>
+</tr></thead></table></center>
+<script>
+var l = [];
+var l1 = [];
+var l2 = [];
+var n = 1;var a = 0;
+function AddRow(){var AddRown = document.getElementById('new');
+			var NewRow = AddRown.insertRow(n);
+                        l[a] = document.getElementById("fname").value;
+			l1[a] = document.getElementById("number").value;
+			l2[a] = document.getElementById("email").value;
+			if(l[a]||l1[a]||l2[a]!="")
+{
+var c1 = NewRow.insertCell(0);
+var c2 = NewRow.insertCell(1);
+var c3 = NewRow.insertCell(2);
+c1.innerHTML = l[a];
+c2.innerHTML = l1[a];
+c3.innerHTML = l2[a];
+n++;a++;
+}
+else
+{alert("All fields must be filled");
+}}
+</script>
+</body>
+</html>

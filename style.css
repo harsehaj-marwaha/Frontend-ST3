@@ -1,0 +1,32 @@
+<style>
+
+    table{
+	margin-top: 100px;
+	text-align: center;
+	color: #FF99FF;
+    width:50%;
+}
+
+#new th, #new td{
+	padding: 20px;
+}
+
+#b1 td input {
+	width: 100%;
+	background-color: orange;
+}
+#heading
+{
+text-align:center;
+}
+#main
+{
+background-color:#b6b6f0;
+}
+hr
+{
+    width:360px;
+	background-color: black;
+}
+
+
